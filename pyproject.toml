@@ -1,0 +1,11 @@
+[project]
+name = "1point3acres"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "pymongo>=4.10.1",
+    "requests>=2.32.3",
+]
