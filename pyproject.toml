@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.12.3",
+    "colorama>=0.4.6",
     "pymongo>=4.10.1",
     "requests>=2.32.3",
 ]

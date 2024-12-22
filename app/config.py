@@ -4,10 +4,17 @@ DATABASE_NAME = "1point3acres"
 COLLECTION_NAME = "interview_experiences"
 
 # website
-BASE_URL = "https://www.1point3acres.com/bbs/"
-INTERVIEW_EXPERIENCE_PAGE_URL = (
-    f"{BASE_URL}/forum.php?mod=forumdisplay&fid=145&filter=sortall&sortall=1"
-)
+BASE_URL = "https://www.1point3acres.com/bbs"
 
 # crawler
-USER_AGENT = "Mozilla/5.0"
+import random
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15",
+]
+
+HEADERS = {
+    "User-Agent": random.choice(USER_AGENTS)
+}
